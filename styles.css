@@ -1,0 +1,152 @@
+/* styles.css */
+/**
+ * XAMPP Projekt Manager - Stylesheet
+ * 
+ * Dieses Stylesheet definiert das Erscheinungsbild der Projektübersicht.
+ * Es verwendet CSS-Variablen für einfache Anpassungen und ein responsives Grid-Layout.
+ */
+
+/* Farbschema und Basisgrößen als CSS-Variablen */
+:root {
+    --primary-color: #FB7A24;    /* XAMPP Orange */
+    --secondary-color: #333333;  /* Dunkelgrau für Text */
+    --bg-color: #f5f5f5;         /* Hellgrauer Hintergrund */
+    --card-bg: #ffffff;          /* Weiß für Karten */
+    --text-muted: #6c757d;       /* Gedämpftes Grau für unwichtigeren Text */
+    --link-hover: #e76b1c;       /* Dunkleres Orange für Hover-Effekte */
+}
+
+/* Basis-Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Überschriften */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* Informationsleiste */
+.info-bar {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #495057;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Projekt-Grid-Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Projekt-Karten */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-title {
+    color: var(--primary-color);
+    margin: 0 0 15px 0;
+    font-size: 1.4em;
+}
+
+.project-description {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* Projekt-Links */
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+    flex: 1;
+    text-align: center;
+}
+
+.http-link {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.https-link {
+    background: #212529;
+    color: #ffffff;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Zusatzinformationen und Meldungen */
+.last-modified {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    padding: 10px;
+    background: #fff5f5;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+}

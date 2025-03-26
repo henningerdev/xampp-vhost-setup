@@ -1,0 +1,13 @@
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Diese Software darf geteilt, kopiert und angepasst werden – jedoch nur für nicht-kommerzielle Zwecke.
+
+Sie dürfen:
+- das Werk vervielfältigen und weiterverbreiten
+- Abwandlungen und Bearbeitungen machen
+
+Unter folgenden Bedingungen:
+- Namensnennung: Sie müssen den Urheber (Marco Henninger) nennen
+- Nicht kommerziell: Keine kommerzielle Nutzung erlaubt
+
+Mehr zur Lizenz: https://creativecommons.org/licenses/by-nc/4.0/
