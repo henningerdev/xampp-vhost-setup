@@ -1,5 +1,10 @@
 # XAMPP VHost Setup & Projektübersicht
 
+## 🖼️ Vorschau
+
+![XAMPP Projektübersicht Screenshot](screenshot.png)
+
+
 Dieses Projekt besteht aus zwei Komponenten zur Unterstützung lokaler Webentwicklung mit XAMPP unter Windows:
 
 ---
